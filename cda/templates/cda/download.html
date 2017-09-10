@@ -1,0 +1,19 @@
+{% extends "zalukaj/base.html" %}
+
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-10 mx-auto mt-5">
+            <h3 class="choice text-center">Link do pobrania: </h3>
+            <p class="text-center"> {{ download_link }}</p>
+            <h4 class="text-center choice">Aby pobrać film przejdź pod podany link, kliknij prawy przycisk myszy na filmie i wybierz opecje "Zapisz jako"</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 mx-auto mt-5">
+            <h3 class="choice text-center">Lub kliknij <a href="http://{{ download_link }}">tutaj</a> </h3>
+        </div>
+    </div>
+
+
+{% endblock %}

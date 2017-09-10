@@ -1,0 +1,15 @@
+{% extends "zalukaj/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class='row'>
+        <div class="col-md-6 mx-auto mt-4">
+            <form action="." method="POST" id="swa">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <button type="submit" id="download" class="btn btn-primary btn-block">Pobierz</button>
+            </form>
+            <p class="text-center mt-3">Obecny downloader pobiera filmy z <a href="https://zalukaj.com/">zalukaj.com</a>, możesz to zmienić <a href="{% url 'homepage' %}">tutaj</a>.</p>
+        </div>
+    </div>    
+{% endblock %}

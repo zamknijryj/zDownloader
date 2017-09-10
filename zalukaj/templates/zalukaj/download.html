@@ -1,0 +1,18 @@
+{% extends "zalukaj/base.html" %}
+
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-10 mx-auto mt-5">
+            <h3 class="choice text-center">Link do pobrania: </h3>
+            <p class="text-center"> {{ download_link }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 mx-auto mt-5">
+            <h3 class="choice text-center">Lub kliknij <a href="http://{{ download_link }}">tutaj</a> </h3>
+        </div>
+    </div>
+    
+
+{% endblock %}

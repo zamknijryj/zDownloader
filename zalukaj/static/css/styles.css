@@ -1,0 +1,20 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+
+.title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 66px;
+}
+
+.info {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+}
+
+.choice {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}

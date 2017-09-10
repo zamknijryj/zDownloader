@@ -1,0 +1,20 @@
+{% extends "zalukaj/base.html" %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-md-12 mx-auto mt-3">
+            <h1 class="choice text-center">Wybierz serwis, z którego chcesz pobrać film:</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 mx-auto mt-3">
+            <a href="{% url 'zalukaj' %}"><h2 class="choice">zalukaj.com</h2></a>
+        </div>
+        <div class="col-md-4 mt-3">
+            <a href="{% url 'cda' %}"><h2 class="choice">cda.pl</h2></a>
+        </div>
+    </div>
+
+{% endblock %}
